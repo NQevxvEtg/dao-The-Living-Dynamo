@@ -75,19 +75,11 @@ All necessary configuration files are included. You only need Docker, Docker Com
 
     **`dao/.env`**
     ```dotenv
-    # PostgreSQL Credentials
     POSTGRES_DB=dao_db
     POSTGRES_USER=dao_user
     POSTGRES_PASSWORD=dao_password
-
-    # Backend Database URL
-    DATABASE_URL=postgresql://dao_user:dao_password@db:5432/dao_db
-
-    # Frontend API URL
-    NEXT_PUBLIC_BACKEND_API_URL=http://localhost:8000
-
-    # Data directory within the container
-    DATA_DIR=/app/data
+    DATABASE_URL=postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB}
+    TRAIN_BATCH_SIZE=8
     ```
 
 3.  **Ignite `dao`**
