@@ -69,6 +69,8 @@ All necessary configuration files are included. You only need Docker, Docker Com
     * Docker: [https://www.docker.com/get-started](https://www.docker.com/get-started)
     * Docker Compose: (Included with Docker Desktop)
     * (Optional, for GPU) NVIDIA drivers and NVIDIA Container Toolkit.
+    * Training data in ./data/train
+    * Validation data in ./data/val
 
 2.  **Environment Setup**
     * In the project root (`dao/`), create a `.env` file. You can copy the example below.
